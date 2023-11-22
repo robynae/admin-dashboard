@@ -20,9 +20,33 @@ html {
 
 .sidebar {
     background-color: aqua;
+    text-align: center;
 
     grid-column: 1;
     grid-row: 1 / 3;
+
+    display: grid;
+    grid-template-rows: 50px 1fr 1fr;
+
+
+}
+
+.sidebar > p {
+    grid-row: 1;
+}
+
+.nav-1 {
+    justify-self: center;
+    align-self: center;
+}
+
+.nav-1 > ul, .nav-2 > ul {
+    list-style: none;
+    font-size: 16px;
+
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    gap: 10px;
 }
 
 .content {
