@@ -44,6 +44,9 @@ html {
     align-self: end;
 
     display: flex;
+    gap: 15px;
+    padding-left: 30px;
+    padding-bottom: 15px;
 }
 
 .user > img {
@@ -51,6 +54,28 @@ html {
     width: 80px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+.username-wrapper {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    gap: 4px;
+}
+
+.username, .username-2 {
+    margin: 0;
+}
+
+.username {
+    align-self: end;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.username-2 {
+    align-self: start;
+    font-size: 36px;
+    font-weight: 700;
 }
 
 input[type="search"] {
@@ -95,7 +120,7 @@ input[type="search"] {
 
 .nav-1, .nav-2 {
     align-self: start;
-    padding-left: 5%;
+    padding-left: 6.5%;
 
     font-size: 24px;
     margin: 0;
